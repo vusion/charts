@@ -18,6 +18,11 @@
   },
   "vusion": {
     "version": ">=0.6.0",
-    "type": "library"
+    "type": "library",
+    "webpack": {
+      "entry": {
+        "bundle": "./src/index.js"
+      }
+    }
   }
 }

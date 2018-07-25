@@ -23,7 +23,7 @@
     "charts"
   ],
   "dependencies": {
-    "echarts": "^4.0.4"
+    "echarts": "^4.1.0"
   },
   "peerDependencies": {
     "vue": "^2.5.0"
