@@ -58,7 +58,7 @@ export default {
         },
         options: {
             handler(options) {
-                !this.chart && options ? this.init() : this.setOption(options, true);
+                !this.chart && options ? this.init() : this.chart.setOption(options, true);
             },
             deep: !this.watchShallow,
         },
@@ -92,19 +92,17 @@ export default {
             if (this.chart)
                 return;
 
-            const chart = ECharts.init(this.$el, this.theme, this.initOptions);
-            chart.setOption(this.options, true);
+            this.chart = ECharts.init(this.$el, this.theme, this.initOptions);
+            this.chart.setOption(this.options, true);
 
             if (this.group)
-                chart.group = this.group;
+                this.chart.group = this.group;
 
             EVENTS.forEach((event) => {
-                chart.on(event, (params) => {
+                this.chart.on(event, (params) => {
                     this.$emit(event, params);
                 });
             });
-
-            this.chart = chart;
         },
         destroy() {
             this.dispose();
@@ -162,7 +160,7 @@ export default {
         dispose() {
             this.delegateMethod('dispose');
         },
-        getIsDispose() {
+        isDisposed() {
             return this.delegateMethod('isDisposed');
         },
         delegateMethod(name, ...args) {

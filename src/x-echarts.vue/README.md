@@ -140,7 +140,7 @@
 - appendData
 - clear
 - dispose
-- getIsDispose
+- isDisposed
 
 ### Static Methods
 
