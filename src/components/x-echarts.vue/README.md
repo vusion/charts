@@ -2,6 +2,22 @@
 
 对 ECharts 进行了 Vue 封装，详细配置可以参考[配置项手册](https://www.echartsjs.com/option.html#series)。
 
+## 使用方法
+
+## 安装
+
+``` shell
+npm i --save x-echarts.vue
+```
+
+## 引入
+
+``` js
+import XEcharts from 'x-echarts.vue';
+
+Vue.component('x-echarts', XEcharts);
+```
+
 ## 示例
 ### 基本形式
 
