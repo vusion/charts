@@ -1,5 +1,7 @@
 # XECharts
 
+对 ECharts 进行了 Vue 封装，详细配置可以参考[配置项手册](https://www.echartsjs.com/option.html#series)。
+
 ## 示例
 ### 基本形式
 

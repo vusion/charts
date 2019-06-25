@@ -1,7 +1,7 @@
 {
   "name": "x-echarts.vue",
-  "description": "Vusion extension UI - Echarts",
-  "version": "0.1.0",
+  "description": "Vusion extension UI - Xcharts",
+  "version": "4.2.1",
   "author": "Rainfore <rainforest92@126.com>",
   "main": "./index.js",
   "repository": "vusion/charts",
