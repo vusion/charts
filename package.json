@@ -5,7 +5,9 @@
   "scripts": {
     "precommit": "bash node_modules/vusion-hooks/pre-commit"
   },
+  "main": "src/index.js",
   "devDependencies": {
+    "cloud-ui.vusion": "^0.4.4",
     "eslint": "^4.13.1",
     "eslint-config-vusion": "^2.0.2",
     "husky": "^0.13.3",
@@ -24,5 +26,10 @@
         "bundle": "./src/index.js"
       }
     }
+  },
+  "dependencies": {
+    "echarts": "^4.2.1",
+    "lodash": "^4.17.15",
+    "resize-detector": "^0.2.0"
   }
 }
